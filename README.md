@@ -1,11 +1,14 @@
 # Bank 24h - Simulador de Terminal Bancário
 
-![Status](https://img.shields.io/badge/Status-Ativo-brightgreen)
-![Versão](https://img.shields.io/badge/Versão-1.1.0-blue)
-![Data](https://img.shields.io/badge/Data-Abril_2026-lightgrey)
-![Licença](https://img.shields.io/badge/Licen%C3%A7a-Educacional-purple)
-![Feito com](https://img.shields.io/badge/Feito%20com-JavaScript-yellow)
-![Frontend](https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS%20%7C%20JS-orange)
+![STATUS](https://img.shields.io/badge/STATUS-CONCLUÍDO-00C853?style=for-the-badge)
+![VERSÃO](https://img.shields.io/badge/VERSÃO-1.1.0-0A66C2?style=for-the-badge)
+![BUILD](https://img.shields.io/badge/BUILD-STABLE-00C853?style=for-the-badge)
+![DATA](https://img.shields.io/badge/ATUALIZADO-ABRIL%202026-9E9E9E?style=for-the-badge)
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![FIGMA](https://img.shields.io/badge/FIGMA-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
 ---
 
