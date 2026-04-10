@@ -2,7 +2,6 @@
 
 ![STATUS](https://img.shields.io/badge/STATUS-CONCLUÍDO-00C853?style=for-the-badge)
 ![DATA](https://img.shields.io/badge/ATUALIZADO-ABRIL%202026-9E9E9E?style=for-the-badge)
-
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
