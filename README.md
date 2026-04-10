@@ -72,7 +72,7 @@ O desenvolvimento seguiu o Product Backlog dividido em quatro etapas principais:
 Para visualizar a documentação completa, incluindo o detalhamento das telas, fluxo de usuário e defesa do projeto, utilize o link abaixo:
 
 <p align="left">
-  <a href="LINK_DOS_SEUS_SLIDES_AQUI">
+  <a href="https://canva.link/7lfzzyfzk8jcv5j">
     <img src="https://img.shields.io/badge/Acessar_Slides_do_Projeto-D13123?style=for-the-badge&logo=google-slides&logoColor=white" alt="Slides do Projeto">
   </a>
 </p>
@@ -81,12 +81,18 @@ Para visualizar a documentação completa, incluindo o detalhamento das telas, f
 
 ## Equipe
 
-| Desenvolvedor | Responsabilidade | Redes Sociais |
+| Integrantes | Função | Contato |
 | :--- | :--- | :--- |
-| **Caio Yuri** | Front-End | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com) |
-| **Eduardo Zanetti** | Back-End / Lógica | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com) |
-| **Isabella Radael** | Design UI/UX | [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://instagram.com) |
-| **Paolla Veronez** | Gestão / PO | [![Discord](https://img.shields.io/badge/Discord-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.com) |
-| **Rafael Brecci** | Qualidade (QA) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com) |
-| **Rafaela Cristina** | Documentação | [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://instagram.com) |
+| **Caio Yuri** | Product Owner | caio.y.lima@aluno.senai.br |
+| **Eduardo Zanetti** | Desenvolvedor | eduardozanettiluis@gmail.com |
+| **Isabella Radael** | Desenvolvedora | isabella.radael09@gmail.com |
+| **Paolla Veronez** | Scrum Master | paollap.veronez@gmail.com |
+| **Rafael Brecci** | Desenvolvedora | fbrecci@gmail.com |
+| **Rafaela Cristina** | Desenvolvedor | rafaelacristina1510.oliveira@gmail.com |
 
+---
+
+<p align="center">
+  <b>SENAI "A. Jacob Lafer" - Santo André, 2026</b><br>
+  Orientadores: Prof. Raul Lopes e Prof. Paulo Camargo
+</p>
