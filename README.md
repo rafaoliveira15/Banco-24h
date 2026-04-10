@@ -11,6 +11,8 @@
 
 ## Índice
 
+<div align="center">
+  
 [![Sobre](https://img.shields.io/badge/Sobre%20o%20Projeto-2E7D32?style=for-the-badge)](#sobre-o-projeto)
 [![Tecnologias](https://img.shields.io/badge/Tecnologias%20e%20Ferramentas-2E7D32?style=for-the-badge)](#tecnologias-e-ferramentas)
 [![Funcionalidades](https://img.shields.io/badge/Funcionalidades-2E7D32?style=for-the-badge)](#funcionalidades)
@@ -18,6 +20,8 @@
 [![Apresentação](https://img.shields.io/badge/Apresentação%20e%20Slides-2E7D32?style=for-the-badge)](#apresentação-e-slides)
 [![Equipe](https://img.shields.io/badge/Equipe-2E7D32?style=for-the-badge)](#equipe)
 [![Instalação](https://img.shields.io/badge/Instalação%20e%20Uso-2E7D32?style=for-the-badge)](#instalação-e-uso)
+
+</div>
 
 ---
 
@@ -74,7 +78,7 @@ O desenvolvimento seguiu o Product Backlog dividido em quatro etapas principais:
 
 Para visualizar a documentação completa, incluindo o detalhamento das telas, fluxo de usuário e defesa do projeto, utilize o link abaixo:
 
-<p align="left">
+<p align="center">
   <a href="https://canva.link/7lfzzyfzk8jcv5j">
     <img src="https://img.shields.io/badge/Acessar_Slides_do_Projeto-D13123?style=for-the-badge&logo=google-slides&logoColor=white" alt="Slides do Projeto">
   </a>
