@@ -88,9 +88,9 @@ Para visualizar a documentação completa, incluindo o detalhamento das telas, f
 | :--- | :--- | :--- |
 | **Caio Yuri** | Product Owner | caio.y.lima@aluno.senai.br |
 | **Eduardo Zanetti** | Desenvolvedor | eduardozanettiluis@gmail.com |
-| **Isabella Radael** | Desenvolvedora | isabella.radael09@gmail.com |
+| **Isabella Radael** | Desenvolvedor | isabella.radael09@gmail.com |
 | **Paolla Veronez** | Scrum Master | paollap.veronez@gmail.com |
-| **Rafael Brecci** | Desenvolvedora | fbrecci@gmail.com |
+| **Rafael Brecci** | Desenvolvedor | fbrecci@gmail.com |
 | **Rafaela Cristina** | Desenvolvedor | rafaelacristina1510.oliveira@gmail.com |
 
 ---
