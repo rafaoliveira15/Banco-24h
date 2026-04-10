@@ -11,13 +11,13 @@
 
 ## Índice
 
-[![Sobre](https://img.shields.io/badge/Sobre%20o%20Projeto-1E88E5?style=for-the-badge)](#sobre-o-projeto)
-[![Tecnologias](https://img.shields.io/badge/Tecnologias%20e%20Ferramentas-8E24AA?style=for-the-badge)](#tecnologias-e-ferramentas)
-[![Funcionalidades](https://img.shields.io/badge/Funcionalidades-43A047?style=for-the-badge)](#funcionalidades)
-[![Metodologia](https://img.shields.io/badge/Planejamento%20e%20Metodologia-F4511E?style=for-the-badge)](#planejamento-e-metodologia)
-[![Apresentação](https://img.shields.io/badge/Apresentação%20e%20Slides-FB8C00?style=for-the-badge)](#apresentação-e-slides)
-[![Equipe](https://img.shields.io/badge/Equipe-3949AB?style=for-the-badge)](#equipe)
-[![Instalação](https://img.shields.io/badge/Instalação%20e%20Uso-00897B?style=for-the-badge)](#instalação-e-uso)
+[![Sobre](https://img.shields.io/badge/Sobre%20o%20Projeto-2E7D32?style=for-the-badge)](#sobre-o-projeto)
+[![Tecnologias](https://img.shields.io/badge/Tecnologias%20e%20Ferramentas-2E7D32?style=for-the-badge)](#tecnologias-e-ferramentas)
+[![Funcionalidades](https://img.shields.io/badge/Funcionalidades-2E7D32?style=for-the-badge)](#funcionalidades)
+[![Metodologia](https://img.shields.io/badge/Planejamento%20e%20Metodologia-2E7D32?style=for-the-badge)](#planejamento-e-metodologia)
+[![Apresentação](https://img.shields.io/badge/Apresentação%20e%20Slides-2E7D32?style=for-the-badge)](#apresentação-e-slides)
+[![Equipe](https://img.shields.io/badge/Equipe-2E7D32?style=for-the-badge)](#equipe)
+[![Instalação](https://img.shields.io/badge/Instalação%20e%20Uso-2E7D32?style=for-the-badge)](#instalação-e-uso)
 
 ---
 
