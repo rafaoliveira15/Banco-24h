@@ -1,8 +1,6 @@
 # Bank 24h - Simulador de Terminal Bancário
 
 ![STATUS](https://img.shields.io/badge/STATUS-CONCLUÍDO-00C853?style=for-the-badge)
-![VERSÃO](https://img.shields.io/badge/VERSÃO-1.1.0-0A66C2?style=for-the-badge)
-![BUILD](https://img.shields.io/badge/BUILD-STABLE-00C853?style=for-the-badge)
 ![DATA](https://img.shields.io/badge/ATUALIZADO-ABRIL%202026-9E9E9E?style=for-the-badge)
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
