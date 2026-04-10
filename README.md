@@ -91,7 +91,7 @@ Para visualizar a documentação completa, incluindo o detalhamento das telas, f
 | **Isabella Radael** | Desenvolvedor | isabella.radael09@gmail.com |
 | **Paolla Veronez** | Scrum Master | paollap.veronez@gmail.com |
 | **Rafael Brecci** | Desenvolvedor | fbrecci@gmail.com |
-| **Rafaela Cristina** | Desenvolvedor | rafaelacristina1510.oliveira@gmail.com |
+| **Rafaela Oliveira** | Desenvolvedor | rafaelacristina1510.oliveira@gmail.com |
 
 ---
 
