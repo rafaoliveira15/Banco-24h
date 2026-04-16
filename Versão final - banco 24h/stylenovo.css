@@ -1,0 +1,774 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    box-sizing: border-box;
+    position: relative;
+    padding-bottom: 90px;
+}
+
+header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 1.8rem 0;
+    font-size: .9vw;
+}
+
+header .header-risc {
+    width: 5vw;
+    height: .2vh;
+    background-color: black;
+}
+
+header i {
+    font-size: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 2rem;
+}
+
+main > h2 {
+    font-size: 3rem;
+}
+
+.container-main {
+    width: clamp(300px, 80%, 90vw);
+    background: rgba(255, 149, 0, 0.36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.main-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70vh;
+    width: 100%;
+}
+
+.main-login img {
+    width: 15rem;
+}
+
+.main-login form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    padding-left: 3rem;
+}
+
+.main-login h2 {
+    color: inherit;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    font-size: 2vw;
+}
+
+form input, button {
+    height: 2.7rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 7px;
+    border: 0;
+    height: 7vh;
+    margin-top: 3rem;
+}
+
+form input {
+    box-sizing: border-box;
+    padding-left: 1rem;
+    height: 7vh;
+}
+
+form button {
+    color: inherit;
+    cursor: pointer;
+}
+
+.img-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+/* ===================== PAINEL ===================== */
+
+.main-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 3rem;
+    gap: 2.7rem;
+    position: relative;
+    width: clamp(300px, 80%, 90vw);
+    min-height: 70vh;
+    background: rgba(255, 149, 0, 0.36);
+    box-shadow: 0px 4px 20px 5px rgba(255, 183, 81, 0.32);
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    color: inherit;
+}
+
+.title h2 {
+    margin: 0;
+    font-size: 1.5vw;
+}
+
+.organization-all {
+    display: flex;
+    gap: 1.2rem;
+    align-items: stretch;
+    flex: 1;
+    width: 100%;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 2rem;
+}
+
+/* ===================== SALDO ===================== */
+
+.saldo {
+    width: 16vw;
+    height: 11vh;
+    background-color: white;
+    top: -1rem;
+    right: 4rem;
+    color: inherit;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    user-select: none;
+    font-size: 1.2vw;
+    position: absolute;
+    gap: .5rem;
+    box-shadow: 0px 4px 20px 5px rgba(255, 183, 81, 0.32);
+}
+
+.saldo-div {
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4vw;
+}
+
+.saldo-div label {
+    cursor: pointer;
+    font-size: 1.4vw;
+    color: inherit;
+}
+
+/* ===================== BOTÕES ===================== */
+
+.buttons-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    gap: .5rem;
+}
+
+.buttons-options {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: inherit;
+    border-radius: 15px;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 1vw;
+    user-select: none;
+    padding: 0.5rem;
+}
+
+.buttons-group-separar {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+/* ✅ button-pdf restaurado para o id="btn-pdf" funcionar com o CSS */
+.button-pdf {
+    background-color: white;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    border-radius: 15px;
+    flex-direction: column;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+.button-pdf p {
+    z-index: 2;
+}
+
+.button-pdf i {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.6;
+    font-size: 8rem;
+    margin: auto;
+    top: 0px;
+    color: rgba(255, 183, 81, 0.3);
+}
+
+/* ===================== EXTRATO ===================== */
+
+.top-title {
+    color: inherit;
+    width: 90%;
+    padding: .7rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #D9D9D9;
+    user-select: none;
+}
+
+.extrato-container {
+    width: 60%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1vw;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    padding-top: .5rem;
+    overflow: hidden;
+}
+
+.exib-extrato {
+    color: inherit;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85vw;
+}
+
+table th, table td {
+    padding: 0.4rem 0.6rem;
+    text-align: center;
+}
+
+.extrato-vazio {
+    text-align: center;
+    padding: 1rem;
+    color: blue;
+    opacity: 0.5;
+}
+
+/* ===================== LOGO BANCO ===================== */
+
+.photo-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    pointer-events: none; 
+    z-index: -1; 
+}
+
+.logo-banco {
+    position: absolute;
+    bottom: -110px;
+    right: -50px;
+    opacity: 0.6;
+    width: 400px;
+    height: 400px;
+}
+
+/* ===================== MODAL ===================== */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 280px;
+    color: inherit;
+}
+
+.modal-box h3 {
+    text-align: center;
+}
+
+.modal-box input {
+    height: 2.7rem;
+    border-radius: 7px;
+    border: 1px solid #ddd;
+    padding-left: 1rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.modal-buttons button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* ===================== NAV ===================== */
+
+nav {
+    min-height: 70px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, rgba(70, 255, 53, 0.7) 0%, rgba(255, 255, 255, 0.7) 32.69%);
+    box-shadow: 0px 4px 20px 5px rgba(70, 255, 53, 0.32);
+    align-self: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    gap: 2rem;
+    position: fixed;
+    bottom: 10px;
+    z-index: 50;
+}
+
+#active-slot {
+    width: 100px;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.circle.shrinking {
+    display: none !important;
+}
+
+.colorido-labelItau {
+    background: linear-gradient(90deg, rgba(255, 168, 28, 0.7) 0%, rgba(255, 255, 255, 0.7) 32.69%);
+    box-shadow: 0px 4px 20px 5px rgba(255, 183, 81, 0.32);
+}
+
+.colorido-labelNubank {
+    background: linear-gradient(90deg, rgba(142, 28, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 32.69%);
+    box-shadow: 0px 4px 20px 5px rgba(142, 28, 255, 0.32);
+}
+
+.colorido-labelBradesco {
+    background: linear-gradient(90deg, rgba(255, 28, 28, 0.7) 0%, rgba(255, 255, 255, 0.7) 32.69%);
+    box-shadow: 0px 4px 20px 5px rgba(255, 28, 28, 0.32);
+}
+
+.colorido-labelSantander {
+    background: linear-gradient(90deg, rgba(255, 28, 28, 0.7) 0%, rgba(255, 255, 255, 0.7) 32.69%);
+    box-shadow: 0px 4px 20px 5px rgba(255, 28, 28, 0.32);
+}
+
+.colorido-labelPicpay {
+    background: linear-gradient(90deg, rgba(62, 255, 28, 0.7) 0%, rgba(255, 255, 255, 0.7) 32.69%);
+    box-shadow: 0px 4px 20px 5px rgba(62, 255, 28, 0.32);
+}
+
+.colorido-labelBancoBrasil {
+    background: linear-gradient(90deg, rgba(43, 28, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 32.69%);
+    box-shadow: 0px 4px 20px 5px rgba(43, 28, 255, 0.32);
+}
+
+#active-slot .circle {
+    transform: scale(1);
+    opacity: 1;
+    animation: appear 0.5s forwards;
+    padding: 15px;
+
+    & img {
+        width: 30px;
+    }
+}
+
+@keyframes appear {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.circle-groups {
+    transition: all 0.5s ease;
+}
+
+nav .circle-groups {
+    height: 70px;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    padding: 0.5rem 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.circle {
+    aspect-ratio: 1/1;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s;
+}
+
+.circle.active {
+    transition: all 0.5s ease;
+    position: absolute;
+    left: 20px; /* Ajuste conforme o padding da sua nav */
+}
+
+.circle img {
+    width: 22px;
+}
+
+.itau { background-color: rgba(255, 183, 81, 0.6);  box-shadow: 0px 4px 20px 5px rgba(255, 183, 81, 0.32); .saldo {box-shadow: 0px 4px 20px 5px rgba(255, 183, 81, 0.32);} }
+
+.nubank { background-color: rgba(206, 99, 248, 0.6); box-shadow: 0px 4px 20px 5px rgba(235, 81, 255, 0.32); .saldo {box-shadow: 0px 4px 20px 5px rgba(235, 81, 255, 0.32);} }
+
+.bradesco { background-color: rgba(255, 137, 137, 0.6); box-shadow: 0px 4px 20px 5px rgba(255, 137, 137, 0.32); .saldo {box-shadow: 0px 4px 20px 5px rgba(255, 137, 137, 0.32);} }
+
+.santander { background-color: rgba(255, 137, 137, 0.6); box-shadow: 0px 4px 20px 5px rgba(255, 137, 137, 0.32); .saldo {box-shadow: 0px 4px 20px 5px rgba(255, 137, 137, 0.32);} }
+
+.picpay { background-color: rgba(175, 255, 166, 0.6); box-shadow: 0px 4px 20px 5px rgba(175, 255, 166, 0.32); .saldo {box-shadow: 0px 4px 20px 5px rgba(175, 255, 166, 0.32);} }
+
+
+.painelitau {
+    box-shadow: 0px 4px 20px 5px rgba(255, 183, 81, 0.32);
+}
+
+.painelnubank {
+    box-shadow: 0px 4px 20px 5px rgba(235, 81, 255, 0.32) !important;
+}
+
+.painelbradesco {
+    box-shadow: 0px 4px 20px 5px rgba(255, 183, 81, 0.32);
+}
+
+.painelsantander {
+    box-shadow: 0px 4px 20px 5px rgba(255, 183, 81, 0.32);
+}
+
+.painelpicpay {
+    box-shadow: 0px 4px 20px 5px rgba(255, 183, 81, 0.32);
+}
+
+.painelbancobrasil {
+    box-shadow: 0px 4px 20px 5px rgba(255, 183, 81, 0.32);
+}
+
+.banco-brasil,
+.bancobrasil {
+    background-color: rgba(65, 91, 208, 0.6);
+}
+
+/* ===================== DECORAÇÃO ===================== */
+
+.circle-green-pai {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+
+#circle-decoration {
+    position: absolute;
+    bottom: -150px;
+    left: -150px;
+    filter: blur(120px);
+    background-color: inherit;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.circlelabelItau {
+    background-color: orange !important;
+}
+
+.circlelabelNubank {
+    background-color: purple !important;
+}
+
+.circlelabelBradesco {
+    background-color: red !important;
+}
+
+.circlelabelPicpay {
+    background-color: green !important;
+}
+
+.circlelabelSantander {
+    background-color: red !important;
+}
+
+.circlelabelBancoBrasil {
+    background-color: blue !important;
+}
+
+.dinheiro span {
+    display: inline-block;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+/* ✅ ADICIONADO: classe oculto que o JS usa para tudo funcionar */
+.oculto {
+    display: none !important;
+}
+
+/* ===================== RESPONSIVO ===================== */
+
+@media (max-width: 768px) {
+
+    body {
+        padding-bottom: 115px;
+    }
+
+    header {
+        font-size: 0.7rem;
+    }
+
+    main > h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .container-main {
+        width: 96%;
+    }
+
+    .main-login {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        min-height: auto;
+        padding: 3rem 0;
+    }
+
+    .main-login img {
+        display: none;
+    }
+
+    .main-login form {
+        width: 90%;
+        padding-left: 0;
+    }
+
+    .main-login h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    form input,
+    form button {
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .img-left {
+        width: 100%;
+    }
+
+    /* ===== PAINEL ===== */
+
+    .main-infos {
+        padding: 1.5rem;
+        min-height: auto;
+        width: 96%;
+    }
+
+    .title h2 {
+        margin: 0;
+        font-size: 4.5vw;
+    }
+
+    .title {
+        justify-content: center;
+    }
+
+    .organization-all {
+        flex-direction: column;
+    }
+
+    .options {
+        width: 100%;
+    }
+
+    /* SALDO */
+    .saldo {
+        position: static;
+        width: 90%;
+        height: auto;
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .saldo-div label {
+    cursor: pointer;
+    font-size: 5vw;
+    color: inherit;
+    }
+
+    .saldo-div {
+        font-size: 1.1rem;
+    }
+
+    /* BOTÕES */
+    .buttons-options {
+        font-size: 0.9rem;
+        height: 40px;
+    }
+
+    /* EXTRATO */
+    .extrato-container {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    /* NAV */
+    nav {
+        width: 95%;
+        border-radius: 20px;
+        justify-content: center;
+    }
+
+    nav .space-for-circle-active {
+        display: none;
+    }
+
+    .circle {
+        height: 80%;
+    }
+
+    .circle img {
+        width: 19px;
+    }
+
+    /* DECORAÇÃO */
+    .photo-img,
+    .circle-green-pai {
+        display: none;
+    }
+}
+
+:root {
+    --itautexto: orangered;
+    --nubanktexto: #741174;
+    --bradescotexto: #f72c2c;
+    --santandertexto: #f72c2c;
+    --picpaytexto: limegreen;
+    --bancobrasiltexto: blue;
+}
+
+.h2itau {
+    color: orangered !important;
+}
+.h2nubank {
+    color: #741174 !important;
+}
+.h2bradesco {
+    color: #f72c2c !important;
+}
+.h2santander {
+    color: #f72c2c !important;
+}
+.h2picpay {
+    color: limegreen !important;
+}
+.h2bancobrasil {
+    color: blue !important;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylenovo.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+    <title>Caixa 24h</title>
+</head>
+<body>
+    <header>
+        <div class="header-risc"></div>
+        <h1>Bem vindo ao caixa global 24h</h1> <i class="ph ph-timer"></i>
+    </header>
+    <main>
+        <h2 class="main-h2" id="h2-login">Seu dinheiro no seu ritmo, <br>a qualquer hora do dia ou da noite.</h2>
+
+        <!-- ✅ container-main contém APENAS o login, igual ao indexsave -->
+        <div class="container-main" id="container-main">
+            <div class="main-login" id="secao-login">
+                <form action="">
+                    <h2>Insira suas credenciais para continuar!</h2>
+                    <input type="text" placeholder="CPF do titular" id="input-cpf">
+                    <input type="password" placeholder="Senha" id="input-senha">
+                    <button type="button" id="buttonLogar">Entrar</button>
+                    <div id="msg-login"></div>
+                </form>
+                <div class="img-left">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Ita%C3%BA_Unibanco_logo_2023.svg/960px-Ita%C3%BA_Unibanco_logo_2023.svg.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="main-infos oculto" id="secao-painel">
+            <div class="title" id="header-banco">
+                <h2>Bem vindo de volta Caio!</h2>
+            </div>
+
+            <div class="organization-all">
+                <div class="options">
+                    <div class="saldo">
+                    <p>Seu saldo</p>
+                    <div class="saldo-div">
+                        <p id="saldo-display">--</p>
+                        <input type="checkbox" id="btn-toggle-saldo" hidden>
+                        <label for="btn-toggle-saldo">
+                            <i class="ph ph-eye"></i>
+                        </label>
+                    </div>
+                </div>
+                    <div class="buttons-group oculto" id="secao-acoes">
+                        <div class="buttons-options op" id="btn-transferencia"><p>Transferir</p> <i class="ph ph-arrow-square-out"></i></div>
+                        <div class="buttons-options op" id="btn-deposito"><p>Depositar</p> <i class="ph ph-arrow-square-in"></i></div>
+                        <div class="buttons-options op" id="btn-saque"><p>Sacar</p> <i class="ph ph-money-wavy"></i></div>
+                        <div class="buttons-options op" id="btn-senha"><p>Trocar senha</p> <i class="ph ph-password"></i></div>
+                        <div class="buttons-options op" id="btn-pdf">
+                            <p>Gerar extrato em pdf</p>
+                            <i class="ph ph-download-simple"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="extrato-container oculto" id="secao-extrato">
+                    <div class="top-title">
+                        <h3><span>Lista</span> <span>de</span> <span>extrato</span> <span>bancário</span></h3>
+                    </div>
+                    <div class="exib-extrato">
+                        <table id="tabela-extrato">
+                            <thead>
+                                <tr>
+                                    <th>Data / Hora</th>
+                                    <th>Tipo</th>
+                                    <th>Obs</th>
+                                    <th class="td-valor">Valor</th>
+                                    <th class="td-saldo">Saldo Após</th>
+                                </tr>
+                            </thead>
+                            <tbody id="extrato-corpo">
+                                <tr>
+                                    <td colspan="5" class="extrato-vazio">Nenhuma transacao registrada.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photo-img">
+                <img class="logo-banco"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Ita%C3%BA_Unibanco_logo_2023.svg/960px-Ita%C3%BA_Unibanco_logo_2023.svg.png"
+                    alt="">
+            </div>
+        </div>
+
+        <div class="modal-overlay oculto" id="modal-overlay">
+                <div class="modal-box" id="modal-box"></div>
+            </div>
+    </main>
+
+    <nav>
+        <div id="active-slot"></div>
+        <div class="circle-groups">
+            <input type="radio" name="bancos" id="itau" value="itau" hidden>
+            <input type="radio" name="bancos" id="nubank" value="nubank" hidden>
+            <input type="radio" name="bancos" id="bradesco" value="bradesco" hidden>
+            <input type="radio" name="bancos" id="santander" value="santander" hidden>
+            <input type="radio" name="bancos" id="picpay" value="picpay" hidden>
+            <input type="radio" name="bancos" id="banco-brasil" value="bancobrasil" hidden>
+            <label class="circle itau" id="labelItau" for="itau"><img src="./assets/images/itau.png" alt=""></label>
+            <label class="circle nubank" id="labelNubank" for="nubank"><img src="./assets/images/nubank.png" alt=""></label>
+            <label class="circle bradesco" id="labelBradesco" for="bradesco"><img src="./assets/images/bradesco.png" alt=""></label>
+            <label class="circle santander" id="labelSantander" for="santander"><img src="./assets/images/santander.png" alt=""></label>
+            <label class="circle picpay" id="labelPicpay" for="picpay"><img src="./assets/images/picpay.png" alt=""></label>
+            <label class="circle banco-brasil" id="labelBancoBrasil" for="banco-brasil"><img src="./assets/images/bancobrasil.png" alt=""></label>
+        </div>
+    </nav>
+
+    <div class="circle-green-pai">
+        <div id="circle-decoration"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+    <script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from('.header-risc', { width: 0, duration: 1, delay: 0.3 });
+    gsap.from('h1',           { opacity: 0, duration: 1, delay: 0.8 });
+    gsap.from('header i',     { opacity: 0, duration: 1, delay: 1.2 });
+    gsap.from('.main-h2',     { opacity: 0, y: 30, duration: 1, delay: 0.5 });
+    gsap.from('.container-main', { y: 50, opacity: 0, duration: 1, delay: 0.4 });
+    gsap.from('nav',          { y: 100, duration: 1, delay: 0.2 });
+    gsap.from('.circle-groups .circle', {
+        scale: 0, opacity: 0, delay: 0.6,
+        ease: "back.out(1)", stagger: 0.08, duration: 0.6
+    });
+
+    window.animarPainel = function () {
+        gsap.set('#secao-painel', { opacity: 0, y: 40 });
+        gsap.set('.saldo',        { opacity: 0, y: 20 });
+        gsap.set('.options .op',  { opacity: 0, x: -20 });
+        gsap.set('.top-title, h3 span', { opacity: 0 });
+        gsap.set('.extrato-container',  { opacity: 0, y: 20 });
+
+        const tl = gsap.timeline();
+
+        tl.to('#secao-painel',   { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" })
+          .to('.saldo',          { opacity: 1, y: 0, duration: 0.5 }, "-=0.3")
+          .to('.options .op',    { opacity: 1, x: 0, stagger: 0.08, duration: 0.4 }, "-=0.2")
+          .to('.extrato-container', { opacity: 1, y: 0, duration: 0.5 }, "-=0.3")
+          .to('.top-title',      { opacity: 1, duration: 0.4 }, "-=0.2")
+          .to('h3 span',         { opacity: 1, stagger: 0.06, duration: 0.4 }, "-=0.2");
+    };
+
+    window.animarSaldo = function () {
+        gsap.from('#saldo-display', {
+            opacity: 0,
+            duration: 1,
+        })
+    }
+
+    window.animarLogin = function () {
+        gsap.set('.container-main', { opacity: 0, y: 40 });
+        gsap.set('.main-h2',        { opacity: 0 });
+
+        gsap.to('.main-h2',       { opacity: 1, duration: 0.6, delay: 0.1 });
+        gsap.to('.container-main',{ opacity: 1, y: 0, duration: 0.7, delay: 0.2 });
+    };
+
+    // --- INTERAÇÃO DA NAV ---
+    const labels = document.querySelectorAll('.circle');
+    const activeSlot = document.getElementById('active-slot');
+
+    labels.forEach(label => {
+        label.addEventListener('click', (e) => {
+            const clickedLabel = e.currentTarget;
+            const temp = e.currentTarget.id;
+
+            labels.forEach(l => l.classList.remove('shrinking'));
+            activeSlot.innerHTML = '';
+
+            document.querySelector('nav').className = '';
+            document.getElementById('circle-decoration').className = '';
+            document.querySelector('nav').classList.add(`colorido-${temp}`);
+            document.getElementById('circle-decoration').classList.add(`circle${temp}`);
+
+            clickedLabel.classList.add('shrinking');
+
+            const clone = clickedLabel.cloneNode(true);
+            clone.classList.remove('shrinking');
+            activeSlot.appendChild(clone);
+        });
+    });
+</script>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
